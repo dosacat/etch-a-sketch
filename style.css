@@ -1,0 +1,64 @@
+ 
+/* Using clear/float.  */
+
+.container div {
+    border: 1px solid black;
+    height: 20px;
+    width:20px;
+    float:left;
+  }
+  
+  .box:nth-of-type(16n+1){
+    clear: both;    
+  }
+
+  .container {
+      width: 960px;
+  }
+
+  /* Using inline-block.
+  
+  .container div {
+    border: 1px solid black;
+    width:6%;
+    height:35px;
+    display:inline-block;
+  
+  }
+  
+  .container {
+    width:60%;
+    margin: 0 auto;
+    font-size:0;
+  } */
+
+  /* Using CSS grid
+
+  .container{
+    display:grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width:60%;
+  }
+  
+  .box{
+    border-color:pink;
+    border-style:solid;
+    height:40px;
+   
+  } */
+
+  /* Using Flexbox
+  
+  .container{
+    width:44rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .box{
+    border: 1px solid pink;
+    height:2.5rem;
+    width:2.5rem;
+  }  */
